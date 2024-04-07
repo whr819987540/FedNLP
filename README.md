@@ -12,10 +12,11 @@ After `git clone`-ing this repository, please run the following command to insta
 
 ```bash
 sudo apt install libopenmpi-dev
-pip install mpi4py
 cd FedML/python/app/fednlp
-conda create -n fednlp python=3.8
+conda create -n fedmlnlp python=3.8
+conda activate fedmlnlp
 pip install fedml
+pip install mpi4py
 pip install -r requirements.txt
 ```
 ## Code Structure of FedNLP
