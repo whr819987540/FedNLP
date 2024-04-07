@@ -44,6 +44,16 @@ To run text classification using MPI simulator follow the following steps:
 1. cd text_classification/
 2. bash ../data/download_data.sh
 3. bash ../data/download_partition.sh
+
+4.1 下载repo+手动下载model
+git clone https://huggingface.co/google-bert/bert-base-uncased
+手动下载pytorch_model.bin文件到相应位置
+
+4.2 lfs下载整个repo(包括模型文件)
+sudo apt-get install git-lfs
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+
 4. bash run_simulation.sh 5
 ```
 
