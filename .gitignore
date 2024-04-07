@@ -1,3 +1,6 @@
 .DS_Store
 */mlops/*
 .gitignore
+__pycache__
+fednlp_data/*
+.history
